@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested and Responsive Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .outer {
+            width: 100%;
+        }
+
+        .nested {
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        .wide {
+            min-width: 700px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nested and Responsive Tables</h1>
+
+    <h2>Nested Table</h2>
+
+    <table class="outer">
+        <tr>
+            <th>Student</th>
+            <th>Contact Details</th>
+        </tr>
+
+        <tr>
+            <td>Garv</td>
+            <td>
+                <table class="nested">
+                    <tr>
+                        <th>Email</th>
+                        <td>garv@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <th>City</th>
+                        <td>Hapur</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Responsive Table</h2>
+
+    <p>Scroll horizontally to see all columns.</p>
+
+    <div class="table-wrap">
+        <table class="wide">
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Semester</th>
+                <th>City</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Aarav</td>
+                <td>B.Tech</td>
+                <td>1</td>
+                <td>Hapur</td>
+                <td>aarav@example.com</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Diya</td>
+                <td>B.Tech</td>
+                <td>1</td>
+                <td>Delhi</td>
+                <td>diya@example.com</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accessible Web Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a:focus, button:focus {
+            outline: 3px solid orange;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            background: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">
+        Skip to main content
+    </a>
+
+    <header>
+        <h1>Accessible Web Page</h1>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="#main">Main Content</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main">
+        <h2>About Accessibility</h2>
+
+        <p>
+            This page demonstrates web accessibility
+            features using HTML.
+        </p>
+
+        <img src="https://placehold.co/300x160?text=Accessible+Image"
+             alt="Sample accessible image">
+
+        <p>
+            <button type="button"
+                    aria-label="Read more about web accessibility">
+                Read More
+            </button>
+        </p>
+    </main>
+
+    <footer id="contact">
+        <p>Contact: student@example.com</p>
+    </footer>
+
+</body>
+</html>

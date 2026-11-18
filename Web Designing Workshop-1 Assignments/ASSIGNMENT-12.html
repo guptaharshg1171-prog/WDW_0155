@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Marks Table</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        thead {
+            background-color: lightblue;
+        }
+
+        tfoot {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Marks</h1>
+
+    <table>
+
+        <caption>Class Test Result</caption>
+
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aarav</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Diya</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Rohan</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Marks</td>
+                <td>255</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
